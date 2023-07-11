@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result Page</title>
+    </head>
+    <style>
+* {
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+} 
+.full{
+    display: flex;
+    flex-direction:column;
+    
+}
+
+body{
+  display: flex;
+  align-items: center;
+  background:#89cff0;
+  padding: 10px 30px;
+}
+nav{
+    background-color: rgb(37, 105, 128);
+    width: 100%;
+    padding: 10px;
+}
+h1{
+    font: "Meddon";
+}
+    </style>
+<div class="full">
+    <nav>
+        <img src="The Cooks.png" width="100px" height="100px">
+    </nav>
+<body>
+    <div class="container">
+        <div class="subsection" id="ing">
+            <h3>Ingredients</h3>
+            <ol>
+            {% for ingredient in reply_var %} 
+                <li>{{ ingredient }}</li>
+            {% endfor %}
+            </ol>
+        </div>
+        <div class="subsection" id="instructions">
+            <h3>Instructions</h3>
+            <ol>
+                {% for ins in reply_var2 %}
+                    <li>{{ ins }}</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</body>
+</div>
+</html>

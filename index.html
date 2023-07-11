@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<style>
+* {
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+} 
+.full{
+    display: flex;
+    flex-direction:column;
+}
+
+.container{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background:#89cff0 ;
+    display:flex;
+}
+form{
+    /* width: 200px; */
+    height: 60px;
+    display:flex;
+}
+input[name="link"]{
+    background: white;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    padding: 20px;
+    min-width: 50vw;
+}
+
+button#button{
+    background-color: rgb(37, 105, 128);
+    padding: 10px 50px;
+    margin: 0px 10px;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav{
+    background-color: rgb(37, 105, 128);
+    width: 100%;
+    padding: 10px;
+}
+h1{
+    font: "Meddon";
+}
+
+</style>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bar - Cooking</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+</head>
+<div class="full">
+<nav>
+    <img src="The Cooks.png" width="100px" height="100px">
+</nav>
+<body>
+    <h1>What do you wish to cook?</h1>
+  <div class="container">
+      <form action="/" method="POST">
+          <input type="text" placeholder="What are you cooking" name="link" id="link_holder">
+
+          <button type="submit" id="button"> Enter </button>
+
+      </form>
+  </div>
+
+
+</body>
+</div>
+</html>
